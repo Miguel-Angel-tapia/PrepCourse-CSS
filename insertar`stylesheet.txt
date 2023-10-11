@@ -1,0 +1,6 @@
+Realmente existen tres formas distintas de insertar CSS en una página construida en HTML, sin embargo. La forma correcta y que menos problemas nos va a traer es:
+ una etiqueta <link/> que va en el <head> y se usa para cargar un archivo externo –con extensión .css- que permite formatear múltiples archivos HTML. El <link/> no funciona si no tiene el atributo “rel”. Debe tener el valor stylesheet (hoja de estilos).
+
+ sintaxis/ejemplo:
+
+ <link rel="stylesheet" href="archivo.css" />

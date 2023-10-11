@@ -1,0 +1,44 @@
+Herencia y Cascada
+
+Cuando tienes una etiqueta “dentro” de otra, es decir, se encuentran anidadas, lo que haces es aplicar el concepto de padres e hijos, o herencia de estilos. Podrás heredar de un elemento padre el tamaño de letra y color de la misma, a menos que el elemento hijo tenga otros estilos aplicados.
+
+Un elemento padre puede tener muchos hijos, y todos ellos heredan sus características, pudiendo tener también características particulares.
+
+ejemplo:
+<section>                             section {padding: 50px 30px;
+  <article>                                    margin-left: 40px}
+   <h2>hola</h2>                      /*se aplicara a section*/
+</article>
+     </section>                        section article { color: #cccccc
+                                                        width: 500px;}
+                                       /*se aplicara a article, + las propiedades de section */
+
+                                       section article h2 { height: 4em; }
+                                       /* se aplicara a h2, + las propiedades de section y article */
+
+El concepto de ‘cascada’ define una ruta u orden de anidamiento que deben cumplir los elementos dentro del HTML. Se trata de una lista de elementos (ya sea por etiqueta, ID o clase) separados por espacios. Si algún elemento cumple esta "ruta" le aplica el formato CSS al último elemento de la lista (el que está justo antes de la apertura de llaves). Se usa para no plagar el HTML de atributos CLASS e ID.
+Por ejemplo:
+Tenemos dos listas distintas (un <ol> y un <ul>) y necesitamos que los <li> de cada lista sean de distintos colores. Podemos aplicarle un class a cada list-item (pero esto nos obliga a copiar y pegar el class tantas veces como ítems tenga cada lista) o hacer una cascada discriminando los <li> dentro de cada lista.
+
+Aplicación Class Aplicación Class Aplicación Class Aplicación Class 
+<ul>
+<li class="rojo"> item r1 </li>                  .rojo { color: red;}
+<li class="rojo"> item r2 </li>
+<li class="rojo"> item r3 </li>
+</ul>
+<ol>
+<li class="azul"> item a1 </li>                   .azul { color: blue;}
+<li class="azul"> item a2 </li>
+</ol>
+
+Aplicación Cascada:Aplicación Cascada:Aplicación Cascada:Aplicación Cascada:
+
+<ul>
+ <li> item r1 </li>                            ul li { color: red;}
+ <li> item r1 </li>
+ <li> item r1 </li>
+</ul>
+<ol>
+ <li> item r1 </li>                              ol lo { color: blue;}
+<li> item r1 </li>
+</ol>

@@ -1,0 +1,34 @@
+La propiedad background en CSS se utiliza para establecer el fondo de un elemento HTML. Puede aceptar múltiples valores y propiedades para controlar diferentes aspectos del fondo de un elemento.
+
+Algo importante a tener en cuenta, son los formatos de imágenes que podemos utilizar para el fondo. Los mismos son: JPG, PNG o GIF. En todos los casos, tienen que estar en modo RGB.
+
+background-color: Define el color de fondo del elemento.
+
+background-image: Establece una imagen como fondo en lugar de un color.
+
+background-repeat: Controla cómo se repite la imagen de fondo ( repeat-x, repeat-y, repeat, space, round, no-repeat, etc.).
+
+background-position: Controla la posición de la imagen de fondo dentro del elemento. (top, bottom, center, left y right, center)
+
+background-size: Define el tamaño de la imagen de fondo. (contain, cover, auto, etc)
+
+background-attachment: Establece si el fondo se desplaza con el contenido o permanece fijo. (scroll, fixed, local, ETC)
+
+background-origin: Controla si el fondo se coloca desde el borde del contenido, el borde del padding o el borde del borde.
+
+background-clip: Define hasta dónde se extiende el fondo (contenido, padding o borde).
+
+background-blur: Aplica un efecto de desenfoque a la imagen de fondo.
+
+background-opacity: Controla la opacidad del fondo.
+
+
+La propiedad background también se puede utilizar para abreviar la configuración de múltiples propiedades de fondo en una sola declaración. 
+
+Por ejemplo:
+background: #FF0000 url("imagen.jpg") no-repeat center center;
+Esto establecería un fondo rojo (#FF0000) con una imagen (imagen.jpg) centrada en el elemento sin repetición. Puedes ajustar estas propiedades para personalizar el fondo de tus elementos HTML de acuerdo a tus necesidades de diseño.
+
+
+
+MAS EN https://developer.mozilla.org/en-US/docs/Web/CSS/background

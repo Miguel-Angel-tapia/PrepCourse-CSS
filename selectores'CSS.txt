@@ -1,0 +1,50 @@
+En CSS, existen tres tipos de selectores:
+
+‘tag’: 
+Los selectores de tipo ‘tag’,hacen referencia al uso del nombre de una etiqueta HTML como selector. En este caso, todo el código CSS asignado a un selector de tipo tag, será aplicado a todas las etiquetas HTML con el mismo nombre.
+ ejemplo:
+  h2 {
+     color: red;
+      }
+de esta forma, todas las etiquetas h2 cambian su color a rojo
+
+
+‘class’
+Si utilizamos el atributo ‘class’ de los elementos HTML, podemos generar grupos de elementos en los que se apliquen las mismas reglas CSS. Puedes usar los nombres que quieras, siempre y cuando empiecen con letras, y pongas un “.” adelante para llamarlos en el CSS. Lo recomendable es poner un nombre que haga referencia a los estilos que tendrá.
+ejemplo:
+.titulos {
+  color: red;
+}
+de esta forma, todas las etiquetas con class igual a titulos cambian a color rojo
+
+ ‘id’.
+Si utilizamos el atributo ‘id’ de los elementos HTML, podemos darle un nombre identificador único a cada uno de ellos. Puedes usar los nombres que quieras, siempre y cuando empiecen con letras, y pongas un “#” adelante para llamarlos en el CSS. Al ser único, no podemos repetir su nombre en ningún otro elemento, sirve para darle estilos a un elemento en específico. Si repetimos un id, solo se aplicarán los estilos al primer elemento que tenga su nombre.
+ejemplo:
+#titulo {
+  color: red;
+}
+de esta forma, solo el elemento con el id titulo, cambiara de color a rojo
+
+
+******************PRIORIDADES Y PRECEDENCIA DE SELECTORES**********************
+******************PRIORIDADES Y PRECEDENCIA DE SELECTORES**********************
+******************PRIORIDADES Y PRECEDENCIA DE SELECTORES**********************
+
+En cuanto a la precedencia de declaraciones, tenemos que tener en cuenta que, cuando varias reglas CSS apuntan al mismo elemento HTML: 
+
+Si son propiedades distintas, se suman (se combinan). 
+
+Si tienen alguna propiedad repetida, sólo una queda (la última). 
+
+**********************************************************************
+En cuanto a la prioridad de los selectores, tenemos que tener en cuenta que:
+
+Los estilos aplicados con un ID, pisan a cualquier otro estilo.
+
+Los estilos aplicados con Class, sobreescriben los estilos aplicados con selectores de etiquetas, pero no a los selectores de ID.
+
+Por último, los selectores de etiquetas tienen la menor precedencia.
+
+Se podría decir que los estilos inline son los que tienen una mayor especificidad, por lo tanto no es recomendable utilizarlos en tu página.
+
+EJEMPLO: ESTILOS EN LINEA > ID > CLASS > TAGS

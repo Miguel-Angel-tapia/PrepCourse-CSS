@@ -1,0 +1,77 @@
+Las pseudo-clases y pseudo-elementos son parte de las hojas de estilo en cascada (CSS) y se utilizan para seleccionar elementos HTML específicos y aplicar estilos a ellos.
+
+ejemplo sintaxis:
+
+selector:pseudo-clase {
+  propiedad1: valor;
+  propiedad2: valor;
+}
+
+                               Pseudo-clases:                                    
+
+Pseudo-clases de enlace (link pseudo-classes):
+
+:link: Selecciona enlaces que no han sido visitados.
+:visited: Selecciona enlaces que ya han sido visitados.
+
+
+Pseudo-clases de interacción (interaction pseudo-classes):
+
+:hover: Selecciona elementos cuando el puntero del ratón se encuentra sobre ellos.
+:active: Selecciona elementos cuando se encuentran activos, como cuando se hace clic en un botón.
+:focus: Selecciona elementos que tienen el foco, como un campo de entrada de texto seleccionado.
+
+
+Pseudo-clases de selección (structural pseudo-classes):
+
+:first-child: Selecciona el primer hijo de un elemento padre.
+:last-child: Selecciona el último hijo de un elemento padre.
+:nth-child(n): Selecciona elementos que son el "n-ésimo" hijo de su padre, donde n es un número o una fórmula matemática.
+
+
+Pseudo-clases basadas en contenido (content-based pseudo-classes):
+
+:empty: Selecciona elementos que no tienen contenido.
+
+
+Otras pseudo-clases:
+
+:not(selector): Selecciona elementos que no coinciden con un selector específico.
+:target: Selecciona el elemento al que apunta un enlace interno en la URL.
+
+
+                             Pseudo-elementos:                    
+
+Los pseudo-elementos permiten seleccionar y estilizar partes específicas de un elemento HTML. Algunos ejemplos comunes son:
+
+::before: Inserta contenido antes del contenido del elemento seleccionado.
+::after: Inserta contenido después del contenido del elemento seleccionado.
+::first-line: Selecciona la primera línea de un elemento de bloque.
+::first-letter: Selecciona la primera letra de un elemento de bloque o elemento en línea.
+
+Ejemplo de uso:
+
+
+p::first-line {
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+li:nth-child(odd) {
+    background-color: lightgray;
+}
+
+input:focus {
+    border: 1px solid red;
+}
+En el ejemplo anterior, se utilizan tanto pseudo-clases como pseudo-elementos para aplicar estilos específicos a elementos HTML en función de diferentes condiciones y ubicaciones dentro del documento.
+
+Los estilos de las pseudo-classes link, visited, hover, y active podrán ser anulados entre ellos dependiendo del orden en el que fueron definidos. Para darle un estilo apropiado a los enlaces, coloque las reglas como lo define el orden LVHA: :link — :visited — :hover — :active.
+
+
+MAS DE PSEUDO-CLASSES: https://developer.mozilla.org/en-US/docs/Web/CSS/:active
+
+MAS DE PSEUDO-ELEMENTOS: https://developer.mozilla.org/en-US/docs/Web/CSS/::after

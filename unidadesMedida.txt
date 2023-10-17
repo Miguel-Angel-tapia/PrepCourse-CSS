@@ -1,0 +1,43 @@
+Unidades absolutas: establecen de forma completa el valor de una medida, por lo que su valor real es directamente el valor indicado.
+
+px (píxeles): Se utiliza para definir tamaños absolutos en píxeles.
+pt (puntos): Usado principalmente para tamaños de fuente en la impresión.
+in (pulgadas): Se refiere a pulgadas físicas.
+cm (centímetros): Se refiere a centímetros físicos.
+mm (milímetros): Se refiere a milímetros físicos.
+
+
+Unidades relativas: definen su valor en relación con otra medida, por lo que para obtener su valor real, se debe realizar alguna operación con el valor indicado. 
+
+em: Relativa al tamaño de fuente del elemento padre.
+rem: Relativa al tamaño de fuente del elemento raíz (generalmente el elemento <html>).
+ex: Relativa a la altura de la letra "x" en el tipo de letra.
+ch: Relativa al ancho de un carácter "0" en el tipo de letra.
+% (porcentaje): Relativo al tamaño del elemento contenedor.
+
+
+Unidades de vista:
+
+vw (viewport width): Relativo al ancho de la ventana gráfica del navegador.
+vh (viewport height): Relativo a la altura de la ventana gráfica del navegador.
+vmin: Relativo al tamaño mínimo entre el ancho y la altura de la ventana gráfica.
+vmax: Relativo al tamaño máximo entre el ancho y la altura de la ventana gráfica.
+
+
+Unidades de resolución:
+
+dpi (dots per inch): Puntos por pulgada, relacionados con la resolución de impresión.
+dpcm (dots per centimeter): Puntos por centímetro, relacionados con la resolución de impresión.
+dppx (dots per pixel): Puntos por píxel, relacionados con la resolución de la pantalla.
+
+
+Unidades de tiempo:
+
+s (segundos): Usado en animaciones y transiciones CSS.
+ms (milisegundos): Fracciones de segundo, también usado en animaciones y transiciones.
+Estas son algunas de las unidades de medida más utilizadas en CSS. La elección de la unidad dependerá de tus necesidades y del diseño de tu sitio web. Las unidades relativas son particularmente útiles para crear diseños adaptables y escalables.
+
+
+
+
+ Si nosotros configuramos el font-size del elemento html en 62.5%, hacemos que en vez de que 16px sea el 100% del valor a tomar en cuenta para calcular las unidades relativas, se use 10px.

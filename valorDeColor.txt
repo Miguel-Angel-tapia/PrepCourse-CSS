@@ -1,4 +1,4 @@
-Debes tener en cuenta que existen distintos valores que puede tomar esta propiedad, pero nos centraremos en tres:
+Debes Tener en cuenta que existen distintos valores que puede tomar esta propiedad, pero nos centraremos en tres:
 
 Nombre del color (por ejemplo: red).
 

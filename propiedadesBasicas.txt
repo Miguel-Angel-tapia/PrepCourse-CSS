@@ -1,0 +1,100 @@
+Propiedades relacionadas con el texto:
+
+color:
+Valores hexadecimales, como #FF5733.
+Nombres de colores, como red.
+Valores RGB, como rgb(255, 87, 51).
+
+font-family:
+Nombres de fuentes, como Arial, Helvetica, sans-serif.
+
+font-size:
+Tamaños de fuente en píxeles, como 16px.
+Tamaños de fuente en porcentaje, como 120%.
+Tamaños de fuente relativos, como 1.2em.
+
+font-weight:
+Valores numéricos, como bold, normal.
+
+font-style:
+normal, italic, oblique.
+
+text-align:
+left, right, center, justify.
+
+text-decoration:
+none, underline, overline, line-through.
+
+line-height:
+Valores numéricos, como 1.5.
+Valores relativos, como 1.2em.
+
+letter-spacing:
+Valores en píxeles, como 2px.
+Valores en porcentaje, como 120%.
+
+text-transform:
+uppercase, lowercase, capitalize.
+
+
+Propiedades relacionadas con las cajas:
+
+background-color:
+Valores hexadecimales, nombres de colores, valores RGB.
+
+margin:
+Valores en píxeles, porcentajes, auto.
+
+padding:
+Valores en píxeles, porcentajes.
+
+border:
+Valores que definen el grosor, el estilo y el color del borde, como 2px solid #000.
+
+border-radius:
+Valores en píxeles, porcentajes.
+
+width:
+Valores en píxeles, porcentajes, auto.
+
+height:
+Valores en píxeles, porcentajes, auto.
+
+position:
+static, relative, absolute, fixed.
+
+display:
+block, inline-block, inline, none.
+
+float:
+left, right.
+
+clear:
+left, right, both.
+
+opacity:
+Valores numéricos entre 0 y 1, como 0.5.
+
+background-image:
+URL de la imagen, como url('imagen.jpg').
+
+background-size:
+cover, contain, valores en píxeles.
+
+box-shadow:
+Valores que definen sombras, como 5px 5px 10px #888888.
+
+z-index:
+Valores numéricos enteros.
+
+list-style:
+Valores para estilo de viñetas, como inside, outside.
+
+border-color:
+Valores hexadecimales, nombres de colores, valores RGB.
+
+border-width:
+Valores en píxeles.
+
+border-style:
+solid, dotted, dashed, double.

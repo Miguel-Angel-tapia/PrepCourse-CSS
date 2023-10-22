@@ -1,0 +1,17 @@
+La propiedad overflow de CSS establece el comportamiento deseado para el desbordamiento de un elemento, es decir, cuando el contenido de un elemento es demasiado grande para caber en su contexto de formato de bloque o línea, en ambas direcciones.
+
+Tiene 4 valores posibles:  
+
+Visible: Es el valor por defecto. El excedente es visible.  
+
+Hidden: El excedente no se muestra (lo recorta y no lo muestra).  
+
+Scroll: Genera una barra de scroll en los dos ejes (X e Y) del elemento, aunque no se necesite.  
+
+Auto: Genera el scroll solo en el eje necesario.
+
+overflow-x: Controla el desbordamiento horizontal del contenido dentro de la caja.
+Valores: Igual que overflow (visible, hidden, scroll, auto).
+
+overflow-y: Controla el desbordamiento vertical del contenido dentro de la caja.
+Valores: Igual que overflow (visible, hidden, scroll, auto).

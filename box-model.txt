@@ -1,0 +1,47 @@
+box-model: modelo en el que trabajamos las cajas
+
+"gerarquia" de interior a exterior:
+1. content: Es el espacio para el texto, imagen o contenido incrustado.
+
+2. padding: Es la separación entre el borde y el contenido de la caja. Es un espacio interior.
+
+3. border: Es el límite entre el elemento y el espacio externo.
+
+4. margin: Es la separación entre el borde y el afuera de la caja. Es un espacio exterior.
+
+
+
+Existen dos propiedades que nos permiten definir el tamaño de los elementos, 
+
+box-sizing: Define cómo se calculan las dimensiones de una caja.
+Valores:
+content-box (valor predeterminado): Las dimensiones se calculan excluyendo el padding y el borde.
+border-box: Las dimensiones se calculan incluyendo el padding y el borde.
+
+width: Define el ancho de la caja.
+Valores: px (píxeles), % (porcentaje), em, rem, auto, etc.
+
+height: Define la altura de la caja.
+Valores: px, %, em, rem, auto, etc.
+
+min-width: Establece el ancho mínimo que puede tener la caja.
+Valores: px, %, em, rem, auto, etc.
+
+min-height: Establece la altura mínima que puede tener la caja.
+Valores: px, %, em, rem, auto, etc.
+
+max-width: Establece el ancho máximo que puede tener la caja.
+Valores: px, %, em, rem, none, etc.
+
+max-height: Establece la altura máxima que puede tener la caja.
+Valores: px, %, em, rem, none, etc.
+
+padding: Agrega espacio alrededor del contenido de la caja.
+Valores: px, %, auto, etc.
+
+margin: Agrega espacio fuera de la caja, lo que afecta su posición y la distancia entre otras cajas.
+Valores: px, %, auto, etc.
+
+border: Define el borde de la caja, que rodea su contenido y padding.
+Valores: ancho del borde, estilo del borde, color.
+

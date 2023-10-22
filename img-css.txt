@@ -1,0 +1,61 @@
+width: Define el ancho de la imagen.
+Valores: px (píxeles), % (porcentaje), em, rem, auto, etc.
+
+height: Define la altura de la imagen.
+Valores: px, %, em, rem, auto, etc.
+
+max-width: Establece el ancho máximo de la imagen, lo que evita que sea más ancha que el valor especificado.
+Valores: px, %, em, rem, none, etc.
+
+max-height: Establece la altura máxima de la imagen, evitando que sea más alta que el valor especificado.
+Valores: px, %, em, rem, none, etc.
+
+margin: Define el espacio alrededor de la imagen.
+Valores: px, %, auto, etc.
+
+padding: Define el espacio dentro del contenedor de la imagen.
+Valores: px, %, auto, etc.
+
+border: Agrega un borde alrededor de la imagen.
+Valores: ancho del borde, estilo del borde, color.
+
+display: Define cómo se muestra la imagen.
+Valores: block, inline, inline-block, none, etc.
+
+float: Hace que la imagen flote a la izquierda o a la derecha de su contenedor.
+Valores: left, right, none.
+
+background: Aplica una imagen de fondo a un elemento HTML.
+Valores: URL de la imagen, posición, repetición, tamaño, color de fondo de 
+respaldo.
+
+object-fit: Controla cómo se ajusta la imagen dentro de su contenedor.
+Valores: fill, contain, cover, none, scale-down.
+
+object-position: Define la posición de la imagen dentro de su contenedor cuando se usa object-fit.
+Valores: top, bottom, left, right, center, etc.
+
+opacity: Define la opacidad de la imagen.
+Valores: 0 (completamente transparente) a 1 (completamente visible).
+
+filter: Aplica efectos de filtro a la imagen, como brillo, contraste, saturación, desenfoque, etc.
+Valores: Funciones CSS como brightness(), contrast(), saturate(), blur(), etc.
+
+transform: Aplica transformaciones 2D o 3D a la imagen, como rotación, escala, traslación, inclinación, etc.
+Valores: Funciones CSS como rotate(), scale(), translate(), skew(), etc.
+
+transition: Define la transición de propiedades al interactuar con la imagen, como hover.
+Valores: duración, función de tiempo, propiedad a animar, retraso, etc.
+
+box-shadow: Agrega una sombra a la imagen.
+Valores: posición x, posición y, desenfoque, propagación, color, etc.
+
+clip-path: Recorta la imagen en una forma específica.
+Valores: polygon(), circle(), ellipse(), etc.
+
+image-rendering: que controla cómo se debe renderizar una imagen en un navegador web. Esta propiedad se utiliza para ajustar la calidad de la representación de una imagen, especialmente cuando se escalan (se hacen más pequeñas o más grandes).
+valores: crisp-edges , pixelated, auto , 'optimizeQuality'
+
+vertical-aling:  se utiliza para controlar la alineación vertical de elementos en línea, como texto o imágenes, dentro de un elemento contenedor. uede utilizarse para alinear una imagen con una línea de texto. 
+valores: baseline, top, middle, bottom, sub, text-top, super, text-bottom, <length>, 'porceentaje'
+

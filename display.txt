@@ -1,0 +1,39 @@
+La propiedad display permite especificar si un elemento debe mostrarse como un bloque, un elemento en línea, una tabla, entre otros. Aquí están algunos de los valores comunes:
+
+block: Hace que el elemento sea un bloque, lo que significa que ocupa toda la anchura disponible y comienza en una nueva línea. Ejemplos de elementos bloque son div, p, h1, ul, ol, li.
+
+inline: Hace que el elemento sea un elemento en línea, lo que significa que no comienza en una nueva línea y ocupa solo el espacio necesario. Ejemplos de elementos en línea son span, a, strong, em.
+
+inline-block: Similar a inline, pero permite establecer propiedades de bloque, como anchura y altura.
+
+none: Hace que el elemento no se muestre en absoluto y se elimine del diseño.
+
+table: Hace que el elemento se comporte como una tabla HTML. Puedes usar subpropiedades como table-row, table-cell, table-header-group, etc., para controlar su comportamiento adicional.
+
+flex: Hace que el elemento se comporte como un contenedor flexible. Se utiliza para crear diseños flexibles y alineados.
+
+grid: Hace que el elemento se comporte como un contenedor de cuadrícula. Se utiliza para crear diseños de cuadrícula.
+
+inline-table: Hace que el elemento se comporte como una tabla en línea. Es similar a table, pero se muestra en línea con otros elementos.
+
+list-item: Hace que el elemento se comporte como un elemento de lista (li).
+
+table-caption: Hace que el elemento se comporte como una leyenda de tabla (caption).
+
+table-column: Hace que el elemento se comporte como una columna de tabla (col).
+
+table-row-group: Hace que el elemento se comporte como un grupo de filas de tabla (tbody).
+
+table-header-group: Hace que el elemento se comporte como un grupo de filas de encabezado de tabla (thead).
+
+table-footer-group: Hace que el elemento se comporte como un grupo de filas de pie de tabla (tfoot).
+
+table-row: Hace que el elemento se comporte como una fila de tabla (tr).
+
+table-cell: Hace que el elemento se comporte como una celda de tabla (td o th).
+
+initial: Restablece la propiedad display al valor predeterminado del elemento.
+
+inherit: Hereda la propiedad display del elemento padre.
+
+contents: Hace que el elemento sea reemplazado por su contenido.

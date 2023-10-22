@@ -1,0 +1,19 @@
+position se utiliza para controlar la posición de un elemento en relación con su contenedor o con otros elementos.
+
+static (valor predeterminado): Los elementos se colocan en su posición normal en el flujo del documento. Las propiedades top, right, bottom y left no tienen ningún efecto.
+
+relative: Los elementos se desplazan desde su posición normal en el flujo del documento, adquieren propiedades top, right, bottom y left. convervan su espacio en viewport, mantiene su punto de referencia, adquiere z-index
+
+absolute: Los elementos se posicionan en relación con su primer ancestro posicionado o el elemento de nivel superior (<html>). No ocupan espacio en el flujo del documento y pueden superponerse a otros elementos. Se utilizan las propiedades top, right, bottom y left. adquiere z-index
+
+fixed: Los elementos se posicionan en relación con la ventana del navegador. No se desplazan con el contenido y permanecen en la misma posición incluso si la página se desplaza. Se utilizan las propiedades top, right, bottom y left. adquiere z-index, para poder dejarlo arriba, hay que bajar padding-top del doby y subir el margin
+
+sticky: Los elementos se comportan como relative hasta que se desplazan fuera de la vista y luego se comportan como fixed. Es útil para elementos que deben permanecer visibles cuando se desplaza el contenido.
+
+initial: Restablece la propiedad position al valor predeterminado.
+
+inherit: Hereda la propiedad position del elemento padre.
+
+unset: Restablece la propiedad position a su valor inicial, que puede ser static o inherit, dependiendo del contexto.
+
+absolute con respecto a un elemento padre posicionado: Cuando se utiliza absolute, pero el elemento padre inmediato del elemento también se establece en una posición distinta de static, el elemento se posiciona en relación con el elemento padre.

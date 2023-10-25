@@ -1,0 +1,56 @@
+flexbox: controla la disposición de estos elementos dentro del contenedor, posiciona un elemento en la posición que desees horizontalmente y verticalmente, establecer cómo se distribuirán, el orden que tendrán e incluso el tamaño que tendrán en proporción a otros elementos. Esto es perfecto para crear diseños adaptables a dispositivos móviles (Responsive Design).
+
+Para comenzar a utilizar Flexbox lo primero que debemos hacer es establecer la propiedad display con el valor flex en el elemento padre. “display: flex” es la única propiedad que necesitamos para configurar el contenedor principal
+
+
+ flex-direction:
+Puedes controlar la dirección en la que se flexionan los elementos estableciendo la propiedad flex-direction. Las opciones comunes son:
+
+row (predeterminado): Elementos se colocan en una fila de izquierda a derecha.
+row-reverse: Elementos se colocan en una fila de derecha a izquierda.
+column: Elementos se colocan en una columna de arriba abajo.
+column-reverse: Elementos se colocan en una columna de abajo arriba.
+
+
+ flex-wrap:
+Con flex-wrap vamos a poder especificar si queremos que los ítems puedan saltar a una nueva línea si el contenedor flexible se queda sin espacio.Las opciones comunes son:
+
+nowrap (valor predeterminado): Los elementos no se envuelven y pueden desbordar del contenedor.
+wrap: Los elementos se envuelven en líneas adicionales si no caben en la línea actual.
+wrap-reverse: Similar a wrap, pero comienza a envolverse en orden inverso.
+
+
+justify-content:
+en Flexbox controla cómo se alinean los elementos a lo largo del eje principal del contenedor. Los valores comunes son:
+
+flex-start: Alinea los elementos al principio.
+flex-end: Alinea los elementos al final.
+center: Alinea los elementos en el centro.
+space-between: Distribuye los elementos uniformemente con espacio adicional al principio y al final.
+space-around: Distribuye los elementos uniformemente con espacio igual alrededor.
+space-evenly: Distribuye los elementos uniformemente con espacio igual alrededor y entre ellos.
+
+
+align-items:
+La propiedad align-items en Flexbox se utiliza para controlar la alineación de los elementos flexibles a lo largo del eje secundario de su contenedor. Los valores comunes son:
+
+flex-start: Alinea los elementos en la parte superior (o inicio) del contenedor en el eje secundario.
+flex-end: Alinea los elementos en la parte inferior (o final) del contenedor en el eje secundario.
+center: Alinea los elementos en el centro del contenedor en el eje secundario.
+baseline: Alinea los elementos en su línea de base común.
+stretch (valor predeterminado): Estira los elementos para llenar la altura del contenedor en el eje secundario.
+
+
+align-content:
+La propiedad align-content alinea los flex items cuando estos no usan todo el espacio disponible en el eje vertical del contenedor flexible.(Esta propiedad sólo tiene efecto cuando el contenedor flexible tiene varias líneas de flex items. Si se colocan en una sola línea esta propiedad no tiene ningún efecto sobre el diseño..) Los valores comunes son:
+
+flex-start: Alinea las líneas de elementos en la parte superior del contenedor en el eje secundario.
+flex-end: Alinea las líneas de elementos en la parte inferior del contenedor en el eje secundario.
+center: Alinea las líneas de elementos en el centro del contenedor en el eje secundario.
+space-between: Distribuye uniformemente las líneas de elementos con espacio adicional entre ellas y alrededor del contenedor.
+space-around: Distribuye uniformemente las líneas de elementos con espacio igual entre ellas y alrededor del contenedor.
+stretch (valor predeterminado): Estira las líneas de elementos para llenar la altura del contenedor en el eje secundario.
+
+
+Propiedad order:
+Esta propiedad permite modificar el orden de aparición de un elemento. Recibe como valor números enteros positivos o negativos. Su valor por default es 1.

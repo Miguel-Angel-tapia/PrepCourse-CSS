@@ -42,22 +42,22 @@ Propiedades relacionadas con las cajas:
 background-color:
 Valores hexadecimales, nombres de colores, valores RGB.
 
-margin:
+margin: márgenes de cada uno de los lados del elemento
 Valores en píxeles, porcentajes, auto.
 
-padding:
+padding:  los espacios internos de cada uno de los lados del elemento
 Valores en píxeles, porcentajes.
 
-border:
+border:  bordes de cada lado del elemento
 Valores que definen el grosor, el estilo y el color del borde, como 2px solid #000.
 
 border-radius:
 Valores en píxeles, porcentajes.
 
-width:
+width: = ancho de la caja de los elementos
 Valores en píxeles, porcentajes, auto.
 
-height:
+height: = alto de la caja de los elementos
 Valores en píxeles, porcentajes, auto.
 
 position:

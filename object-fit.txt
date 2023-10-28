@@ -1,0 +1,12 @@
+"object-fit" permite controlar cómo se ajusta y muestra el contenido multimedia en un contenedor.
+Posibles valores:
+
+fill: Estira la imagen para llenar todo el contenedor, lo que puede deformar la imagen.
+
+contain: Ajusta la imagen para que quepa completamente en el contenedor sin distorsionar su relación de aspecto. Puede haber espacios en blanco alrededor de la imagen si el contenedor es más grande.
+
+cover: Ajusta la imagen para cubrir completamente el contenedor, recortando partes si es necesario.
+
+none: La imagen se muestra a su tamaño original, y parte de ella puede quedar fuera del contenedor si es más grande.
+
+scale-down: Ajusta la imagen para que quepa completamente en el contenedor manteniendo su relación de aspecto original, mostrando la imagen a su tamaño original si el contenedor es más grande, o ajustándola si es más pequeño.

@@ -1,3 +1,5 @@
+Una unidad de medida absoluta se calcula contra un único valor base compartido, y en cambio, una unidad de medida relativa se compara contra un valor base que puede cambiar. 
+
 Unidades absolutas: establecen de forma completa el valor de una medida, por lo que su valor real es directamente el valor indicado.
 
 px (píxeles): Se utiliza para definir tamaños absolutos en píxeles.

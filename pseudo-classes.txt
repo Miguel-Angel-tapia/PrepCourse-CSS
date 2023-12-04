@@ -22,7 +22,7 @@ Pseudo-clases de interacción (interaction pseudo-classes):
 :focus: Selecciona elementos que tienen el foco, como un campo de entrada de texto seleccionado.
 
 
-Pseudo-clases de selección (structural pseudo-classes):
+Pseudo-clases de selección (estructural pseudo-classes):
 
 :first-child: Selecciona el primer hijo de un elemento padre.
 :last-child: Selecciona el último hijo de un elemento padre.

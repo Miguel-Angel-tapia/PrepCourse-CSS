@@ -1,0 +1,226 @@
+Para comenzar con Grid necesitamos tener en cuenta una serie de conceptos que utilizaremos:
+
+Contenedor
+Elemento padre que definirá la cuadrícula.
+
+Item
+Los hijos que contiene la cuadrícula (Contenedor).
+
+Celda
+Unidad mínima de la cuadrícula.
+
+Área (grid area)
+Región de celdas de la cuadrícula.
+
+Banda (grid track)
+:Banda horizontal o vertical de celdas dentro de la cuadrícula
+
+Línea (grid line):
+Separador entre las celdas de la cuadrícula.
+
+Activamos la cuadrícula Grid utilizando, sobre el elemento contenedor, la propiedad display con el valor grid o inline-grid. Esto influye en cómo se comportará la cuadrícula con el exterior.
+
+ejemplo:
+
+.grid-container {
+  display: grid;
+}
+
+                  Filas y columnas explícitas
+
+Es posible crear cuadrículas con un tamaño definido. Para ello, sólo tenemos que usar las propiedades CSS grid-template-columns y grid-template-rows, sirven para indicar las dimensiones de cada celda de la cuadrícula, diferenciando entre columnas y filas.    
+
+Propiedad grid-template-columns: Establece el tamaño de las columnas (eje horizontal).
+
+Propiedad grid-template-rows: Establece el tamaño de las filas (eje vertical). 
+
+Sus posibles valores son: numéricos (acompañados de la unidad de medida y combinables entre sí), auto (obtiene el tamaño restante de la columna o fila y lo divide en partes iguales según cuántas veces ha sido utilizado).
+
+ejemplo:
+.grid-contenedor {
+  display: grid;
+  grid-template-columns: 40px 50px auto 50px 40px;
+  grid-template-rows: 25% 100px
+}
+
+(en este ejemplo nuestra cuadricula tiene 5 columnas debido a que le indicamos 5 medidas y 2 filas, por la misma razon : https://articulateusercontent.com/rise/courses/IsJhcdVTk07F7gXCizLndX7mo7HruKpc/wC3Nvb6U87xBLAhQ.png)
+
+                  Filas y columnas repetitivas
+
+En las propiedades grid-template-columns y grid-template-rows podemos indicar expresiones de repetición, indicando celdas que repiten un mismo patrón de celdas varias veces, utilizando la función: repeat([núm de veces], [valor o valores]).
+
+ejemplo:
+.grid-contenedor {
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  grid-template-rows:repeat(2, 50px);
+}
+(En este ejemplo se crea una cuadrícula de 2x2 donde las columnas van a tener un ancho de 100px y las filas van adoptar una altura de 50px.)
+
+
+                         Grid por áreas
+
+Es posible indicar el nombre y la posición concreta de cada área de la cuadrícula utilizando la propiedad grid-template-areas, donde debemos especificar el orden de las áreas, y luego, en cada ítem hijo, Cada conjunto de palabras escritas entre comillas (“”) en la propiedad grid-template-areas representará una fila en la grilla, indicando en cada una de las celdas de esa fila que elemento la ocupará.
+
+-La palabra clave none: Indica que no se colocará ninguna celda en esta posición.
+-Uno o más puntos (.): Indica que se colocará una celda vacía en esta posición.
+
+ejemplo:   
+header {grid-area: header;}
+main {grids-area:main;}
+aside {grid-area:sidebar;}
+footer {grid-area:footer;}
+
+.grid-container {
+  display:grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+  "header header headr header"
+  "main main . sidebar"
+  "footer footer footer footer";
+}
+( imagen/ejemplo: https://articulateusercontent.com/rise/courses/IsJhcdVTk07F7gXCizLndX7mo7HruKpc/H4XQM0p305WIZ4x1.jpg)
+
+
+
+
+                      Grid espacios o gap
+
+La cuadrícula tiene todas sus celdas una a continuación de la otra. Aunque sería posible darle un margen a las celdas dentro del contenedor, existe una forma más apropiada, evitando los problemas clásicos de los modelos de caja: los huecos (gutters).
+
+Propiedad column-gap: Establece el tamaño de los espacios entre columnas (eje horizontal). 
+
+Propiedad row-gap: Establece el tamaño de los espacios entre filas (eje vertical).
+
+ejemplo: 
+.grid-container {
+  display: grid;
+  column-gap: 10px;
+  row-gap: 15px;
+}
+
+(imagen del ejemplo: https://articulateusercontent.com/rise/courses/IsJhcdVTk07F7gXCizLndX7mo7HruKpc/s5TPI02JeCBpDWRs.jpg)
+
+
+                        Posición de elementos
+
+Existen propiedades que se pueden utilizar para colocar los ítems dentro de la cuadrícula en ciertas posiciones específicas. 
+Podemos distribuir los elementos de una forma muy sencilla y cómoda, utilizando justify-ítems y align-items, que ya conocemos de la lección anterior: Flexbox.
+Por otro lado, también podemos utilizar las propiedades justify-content o align-content para cambiar la distribución de todo el contenido en su conjunto.
+
+
+Propiedad justify-items
+
+Distribuye los elementos en el eje horizontal dentro de cada una de sus celdas.
+Sus posibles valores son: start, end, center, stretch.
+
+ejemplo:
+.grid-container {
+  display: grid;
+  justify-content: start;
+}
+(ejemplos imagen: https://articulateusercontent.com/rise/courses/IsJhcdVTk07F7gXCizLndX7mo7HruKpc/gY_vDnOZYRqMkI-n.jpg )
+
+
+Propiedad align-items
+
+Distribuye los elementos en el eje vertical dentro de cada una de sus celdas.
+Sus posibles valores son: start, end, center, stretch.
+
+ejemplo:
+.grid-container {
+  display: grid;
+  align-content: start:
+}
+
+(ejemplo imagen: https://articulateusercontent.com/rise/courses/IsJhcdVTk07F7gXCizLndX7mo7HruKpc/90vIb4awT1KrB19L.jpg)
+
+
+Propiedad justify-content 
+
+Distribuye los elementos en conjunto en el eje horizontal dentro del grid container.
+Sus posibles valores son: start, end, center, stretch, space-around, space-between, space-evenly.
+
+ejemplo:
+.grid-container {
+  display: grid;
+  justify-content: start;
+}
+(ejemplo imagen: https://articulateusercontent.com/rise/courses/IsJhcdVTk07F7gXCizLndX7mo7HruKpc/abF6NURh9P9osKx3.jpg)
+
+Propiedad align-content 
+
+Distribuye los elementos en conjunto en el eje vertical dentro del grid container. Sus posibles valores son: start, end, center, stretch, space-around, space-between, space-evenly.
+
+ejemplo:
+.grid-container {
+  display: grid;
+  align-content: start;
+}
+
+(ejemplo imagen: https://articulateusercontent.com/rise/courses/IsJhcdVTk07F7gXCizLndX7mo7HruKpc/CJdF0SKXpqDwf6Rv.jpg)
+
+
+
+
+                       Propiedades de ítems
+
+Propiedad justify-self
+
+Altera la justificación del ítem hijo en el eje horizontal. Sus posibles valores son: start, end, center, stretch.
+
+ejemplo:
+.grid-item {
+  justify-self: start;
+}
+
+(ejemplo imagen: https://articulateusercontent.com/rise/courses/IsJhcdVTk07F7gXCizLndX7mo7HruKpc/te5oQfDbWSQ8HLxm.png)
+
+
+Propiedad align-self
+
+Altera la alineación del ítem hijo en el eje vertical. Sus posibles valores son: start, end, center, stretch.
+
+ejemplo:
+.grid-item {
+  align-self: start;
+}
+(ejemplo imagen: https://articulateusercontent.com/rise/courses/IsJhcdVTk07F7gXCizLndX7mo7HruKpc/EI8Plbxny6Aa4eCJ.png)
+
+
+
+             Propiedades de CSS Grid Layout
+Propiedades del contenedor:
+
+display: grid; - Establece el contenedor como un grid container.
+grid-template-columns: - Define el tamaño y número de columnas.
+grid-template-rows: - Define el tamaño y número de filas.
+grid-template-areas: - Define áreas y asigna nombres a esas áreas.
+grid-template: - Atajo para definir columnas, filas y áreas en una sola propiedad.
+grid-gap: - Establece el espacio entre filas y columnas.
+grid-row-gap: y grid-column-gap: - Define espacios específicos para filas y columnas.
+Propiedades de los ítems:
+
+grid-column: - Especifica la ubicación de un ítem a lo largo de las columnas.
+grid-row: - Especifica la ubicación de un ítem a lo largo de las filas.
+grid-area: - Especifica la ubicación de un ítem y su tamaño en el grid.
+Alineación:
+
+justify-items: - Alinea los ítems a lo largo del eje de las columnas.
+align-items: - Alinea los ítems a lo largo del eje de las filas.
+place-items: - Alinea y coloca ítems en el grid en una sola propiedad.
+justify-content: - Alinea el contenido del grid a lo largo del eje de las columnas.
+align-content: - Alinea el contenido del grid a lo largo del eje de las filas.
+place-content: - Alinea y coloca el contenido del grid en una sola propiedad.
+Unidades y Valores:
+
+fr - Unidad de fracción, útil para distribuir el espacio restante.
+% - Porcentaje del tamaño del contenedor.
+auto - Tamaño automático basado en el contenido o ajustado automáticamente.
+min-content, max-content - Tamaños mínimos o máximos basados en el contenido.
+Funciones y atajos:
+
+repeat() - Repite un patrón de tamaño de columna o fila.
+minmax() - Establece un rango mínimo y máximo para el tamaño de una columna o fila.
+auto-fill, auto-fit - Opciones para crear automáticamente columnas o filas.

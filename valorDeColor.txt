@@ -28,6 +28,7 @@ Puedes utilizar herramientas en línea o editores de código para seleccionar y 
 
 
 RGB (por ejemplo: 50, 212, 227). Si agregas un valor más, puedes manejar su opacidad. Cada color permite hasta 256 valores.
+La opacidad se agrega a través de la notación RGBA (Red, Green, Blue, Alpha), donde el componente Alpha representa la opacidad y puede variar de 0 a 1. Ejemplo: rgba(255, 0, 0, 0.5) sería un rojo semi-transparente.
 
 La notación RGB (Red, Green, Blue) en CSS te permite definir un color utilizando los valores de intensidad de estos tres componentes. Los valores de cada componente pueden variar de 0 a 255 o de 0% a 100%. Aquí tienes ejemplos de cómo usar la notación RGB:
 
@@ -37,6 +38,8 @@ rgb(255, 165, 0):Naranja.         rgb(128, 0, 128): Morado.
 rgb(255, 192, 203):Rosa claro     rgb(165, 42, 42):Marrón rojizo.   
 rgb(128, 128, 128): Gris medio.   rgb(0, 0, 0): Negro.
 rgb(255, 255, 255): Blanco.
+
+
 
 También puedes utilizar porcentajes para los componentes RGB en lugar de valores enteros. Por ejemplo:
 

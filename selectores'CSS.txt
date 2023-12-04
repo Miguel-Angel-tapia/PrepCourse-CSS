@@ -48,3 +48,17 @@ Por último, los selectores de etiquetas tienen la menor precedencia.
 Se podría decir que los estilos inline son los que tienen una mayor especificidad, por lo tanto no es recomendable utilizarlos en tu página.
 
 EJEMPLO: ESTILOS EN LINEA > ID > CLASS > TAGS
+
+
+ejemplos! 
+Selector Universal: *
+Selector de etiqueta (párrafos): p
+Selector de Clase (.boton): .boton
+Selector de ID (#encabezado): #encabezado
+Selector de Atributo ([type]): [type]
+Selector de Atributo con Valor ([type="text"]): [type="text"]
+Selector Descendente (enlaces dentro de nav): nav a
+Selector de Hijo (elementos li directos de ul): ul > li
+Selector de Hermano Adyacente (párrafos después de h2): h2 + p
+Pseudoclase :hover (enlaces al pasar el ratón): a:hover
+Pseudoelemento ::before (contenido antes de los párrafos): p::before

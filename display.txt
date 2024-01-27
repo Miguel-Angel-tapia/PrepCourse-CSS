@@ -2,7 +2,7 @@ La propiedad display permite especificar si un elemento debe mostrarse como un b
 
 block: Hace que el elemento sea un bloque, lo que significa que ocupa toda la anchura disponible y comienza en una nueva línea. Ejemplos de elementos bloque son div, p, h1, ul, ol, li.
 
-inline: Hace que el elemento sea un elemento en línea, lo que significa que no comienza en una nueva línea y ocupa solo el espacio necesario. Ejemplos de elementos en línea son span, a, strong, em.
+inline: Hace que el elemento sea un elemento en línea, lo que significa que no comienza en una nueva línea y ocupa solo el espacio necesario. Ejemplos de elementos en línea son span, a, strong, em. 
 
 inline-block: Similar a inline, pero permite establecer propiedades de bloque, como anchura y altura.
 

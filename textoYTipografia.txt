@@ -1,0 +1,68 @@
+font-family: Esta propiedad se utiliza para definir la fuente tipográfica que se aplicará al texto de un elemento. Puedes especificar una lista de fuentes en orden de preferencia, separadas por comas. El navegador intentará utilizar la primera fuente disponible en la lista y, si no está disponible, pasará a la siguiente. Por ejemplo:
+body {font-family: "Arial", Helvetica, sans-serif;}
+
+En CSS, puedes definir fuentes tipográficas tanto desde la web como desde el sistema local. Aquí tienes información sobre ambas opciones:
+
+Fuentes de Google Fonts: Google Fonts es un servicio gratuito que proporciona una amplia variedad de fuentes web para usar en tu sitio web. Puedes incluir estas fuentes en tu CSS utilizando una etiqueta link en tu archivo HTML o mediante una regla @import en tu archivo CSS. Por ejemplo:
+
+/* Usando una fuente de Google Fonts en CSS */
+                      html
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+                      css
+* {
+ font-family: 'Oswald', sans-serif
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body {font-family: 'Open Sans', sans-serif;}
+
+PROPIEDADES DE TEXTO:
+
+font-family: Define la fuente tipográfica que se utilizará para el texto.
+
+font-size: Establece el tamaño de la fuente del texto.
+
+font-weight: Controla el grosor o negritura de la fuente (por ejemplo, normal, bold, bolder, lighter).
+
+font-style: Define el estilo de la fuente (por ejemplo, normal, italic, oblique).
+
+font-variant: Controla las variantes tipográficas, como las letras pequeñas (small-caps).
+
+text-align: Alinea el texto en el elemento (por ejemplo, left, right, center, justify).
+
+text-decoration: Agrega decoraciones al texto, como subrayado, tachado o subíndice/superíndice.
+
+text-shadow: Agrega sombra al texto, permitiendo especificar el color, la posición y el desenfoque de la sombra.
+
+text-transform: Controla la transformación del texto, como hacer que el texto sea todo en mayúsculas o minúsculas.
+
+text-overflow: Controla el comportamiento de desbordamiento del texto.
+
+text-align-last: Alinea el último renglón de un párrafo.
+
+text-justify: Controla la justificación del texto en líneas de texto completas.
+
+text-indent: Establece la sangría de la primera línea de un párrafo.
+
+letter-spacing: Ajusta el espacio entre caracteres (espaciado de letras).
+
+line-height: Controla la altura de línea (espaciado entre las líneas de texto).
+
+line-height: Controla la altura de línea, que es la distancia vertical entre las líneas de texto.
+
+list-style-type: establece el tipo de ícono enumerador de un elemento de lista. Sus posibles valores más utilizados son: disc, circle, square, decimal, upper-roman.
+
+white-space: Controla cómo se maneja el espacio en blanco dentro del elemento, como colapsar espacios en blanco adicionales.
+
+word-spacing: Controla el espacio entre palabras.
+
+overflow: Controla cómo se maneja el desbordamiento de texto dentro de un elemento (por ejemplo, ellipsis para agregar puntos suspensivos).
+
+color: Especifica el color del texto.
+
+
+
+
+

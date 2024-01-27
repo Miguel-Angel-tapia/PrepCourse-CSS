@@ -45,3 +45,80 @@ Valores: px, %, auto, etc.
 border: Define el borde de la caja, que rodea su contenido y padding.
 Valores: ancho del borde, estilo del borde, color.
 
+Cuando trabajas con CSS para diseñar y dar estilo a una caja (o elemento), el orden en que aplicas las propiedades puede influir en el resultado final. Aquí tienes una guía general sobre el orden recomendado al trabajar con propiedades relacionadas con el modelo de caja y el diseño en CSS:
+
+Dimensiones y Modelo de Caja:
+
+Establece las dimensiones del elemento y las propiedades del modelo de caja como width, height, margin, padding, box-sizing, etc. Esto te permite definir la estructura básica y el espacio que ocupará tu caja.
+ej:.mi-caja {
+  box-sizing: border-box;
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+  padding: 10px;
+}
+
+Posicionamiento y Visualización:
+
+Define las propiedades de posicionamiento y visualización, como position, top, left, right, bottom, display, etc.
+ej:.mi-caja {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+Diseño de Caja y Borde:
+
+Establece propiedades relacionadas con el diseño de la caja y el borde, como border, border-radius, background-color, etc.
+ej:.mi-caja {
+  border: 2px solid #333;
+  border-radius: 8px;
+  background-color: lightgray;
+}
+
+Flexbox/Grid (si aplicable):
+
+Si estás utilizando Flexbox o Grid, aplica propiedades específicas de estos modelos de diseño.
+ej:.mi-caja {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+Texto y Fuente (si aplicable):
+
+Si tu caja contiene texto, establece propiedades relacionadas con el texto y la fuente, como font-family, font-size, color, etc.
+ej:.mi-caja p {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #555;
+}
+
+puedes aplicar todas esas propiedades sobre la misma clase o identificador (o cualquier selector que estés utilizando para apuntar a la caja) en tu hoja de estilos CSS. Por ejemplo:
+
+.mi-caja {
+  box-sizing: border-box;
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+  padding: 10px;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid #333;
+  border-radius: 8px;
+  background-color: lightgray;
+
+  /* Propiedades específicas de Flexbox si es aplicable */
+  /* Propiedades de texto y fuente si es aplicable */
+}
+
+.mi-caja p {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #555;
+}

@@ -1,0 +1,31 @@
+Aunque no hay una única regla estricta, se suele seguir un orden lógico y estructurado. Aquí te presento una guía general para el orden en que puedes aplicar las propiedades CSS:
+
+Resetear Estilos:
+Al inicio de tu hoja de estilos, puedes incluir un reset o normalización de estilos para garantizar una base consistente entre los diferentes navegadores. Ejemplos de herramientas para esto son Normalize.css o Reset CSS.
+
+Box Model:
+Define propiedades relacionadas con el modelo de caja, como box-sizing, width, height, margin, padding, etc. Esto establece la estructura básica y dimensiones de tus elementos.
+
+Typografía:
+Define propiedades relacionadas con el texto, como font-family, font-size, font-weight, line-height, etc.
+
+Color:
+Define propiedades de color, como color para el texto, y background-color para el fondo. Puedes establecer colores de fondo y texto aquí.
+
+Posicionamiento:
+Define propiedades de posicionamiento, como position, top, left, right, bottom, z-index. Esto es importante si necesitas posicionar elementos de manera específica.
+
+Diseño de Caja y Visualización:
+Define propiedades relacionadas con el diseño de caja y visualización, como border, border-radius, display, overflow, etc.
+
+Flexbox/Grid:
+Si estás utilizando Flexbox o Grid, puedes definir sus propiedades en este punto para controlar el diseño de tus elementos.
+
+Transformaciones y Transiciones:
+Si necesitas aplicar transformaciones o transiciones a elementos, este es el momento de hacerlo.
+
+Animaciones:
+Si tienes animaciones en tu sitio, puedes definir las propiedades relacionadas con animaciones en este punto.
+
+Media Queries:
+Al final, puedes agregar reglas específicas para diferentes tamaños de pantalla utilizando media queries (@media).

@@ -53,8 +53,8 @@ EJEMPLO: ESTILOS EN LINEA > ID > CLASS > TAGS
 ejemplos! 
 Selector Universal: *
 Selector de etiqueta (párrafos): p
-Selector de Clase (.boton): .boton
-Selector de ID (#encabezado): #encabezado
+Selector de Clase (class="boton"): .boton
+Selector de ID (id="encabezado"): #encabezado
 Selector de Atributo ([type]): [type]
 Selector de Atributo con Valor ([type="text"]): [type="text"]
 Selector Descendente (enlaces dentro de nav): nav a

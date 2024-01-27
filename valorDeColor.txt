@@ -5,26 +5,17 @@ Nombre del color (por ejemplo: red).
 red: Rojo.              orange: Naranja.               
 blue: Azul.             navy: Azul marino, un azul oscuro.
 green: Verde.           olive: Verde oliva, un tono de verde grisáceo.   
-yellow: Amarillo.       lime: Lima, un verde brillante.
-gray o grey: Gris.      teal: Verde azulado.
-purple: Morado.         cyan: Cian, un tono de azul verdoso.
-pink: Rosa.             magenta: Magenta, un tono de rosa púrpura.
-brown: Marrón.          maroon: Marrón rojizo.
-black: Negro.           white: Blanco.
 
 
 Hexadecimal (por ejemplo: #FFFFFF).
 Los valores de color hexadecimal en CSS utilizan una notación de seis dígitos que representa los componentes rojo (R), verde (G) y azul (B) de un color. Cada dígito hexadecimal va desde 00 (sin intensidad) hasta FF (máxima intensidad)
 
 #FF0000: Rojo puro.       #A52A2A: Marrón (marrón rojizo).
-#0000FF: Azul puro.       #FFC0CB: Rosa (rosa claro).
-#00FF00: Verde puro.      #800080: Morado.
 #FFFF00: Amarillo.        #FFFFFF: Blanco.
 #FFA500: Naranja.         #000000: Negro.
 
-Además de los colores básicos, puedes crear una amplia gama de colores personalizados utilizando valores hexadecimales. Cada par de dígitos representa una intensidad en los componentes de color R, G y B. Por ejemplo, #RRGGBB, donde RR representa la intensidad del componente rojo, GG representa la intensidad del componente verde y BB representa la intensidad del componente azul.
-Puedes utilizar herramientas en línea o editores de código para seleccionar y generar valores hexadecimales de colores de manera más sencilla, o incluso utilizar herramientas de selección de colores en la mayoría de los editores de código y aplicaciones de diseño web para elegir colores de manera visual.
-
+Cada par de dígitos representa una intensidad en los componentes de color R, G y B. Por ejemplo, #RRGGBB, donde RR representa la intensidad del componente rojo, GG representa la intensidad del componente verde y BB representa la intensidad del componente azul.
+Puedes utilizar herramientas en línea o editores de código para seleccionar y generar valores hexadecimales
 
 
 RGB (por ejemplo: 50, 212, 227). Si agregas un valor más, puedes manejar su opacidad. Cada color permite hasta 256 valores.
@@ -34,12 +25,7 @@ La notación RGB (Red, Green, Blue) en CSS te permite definir un color utilizand
 
 rgb(255, 0, 0):Rojo puro.         rgb(0, 0, 255): Azul puro.
 rgb(0, 128, 0):Verde puro.        rgb(255, 255, 0): Amarillo.
-rgb(255, 165, 0):Naranja.         rgb(128, 0, 128): Morado.
-rgb(255, 192, 203):Rosa claro     rgb(165, 42, 42):Marrón rojizo.   
-rgb(128, 128, 128): Gris medio.   rgb(0, 0, 0): Negro.
-rgb(255, 255, 255): Blanco.
-
-
+rgb(0, 0, 0): Negro.              rgb(255, 255, 255): Blanco.
 
 También puedes utilizar porcentajes para los componentes RGB en lugar de valores enteros. Por ejemplo:
 
@@ -48,7 +34,10 @@ rgb(100%, 0%, 0%): Rojo puro.    rgb(0%, 0%, 100%): Azul puro.
 rgb(0%, 50%, 0%): Verde puro.    rgb(100%, 100%, 0%): Amarillo.
 
 rgb(100%, 65%, 0%): Naranja (similar al color de la fruta naranja).
-La notación RGB te permite especificar colores personalizados con gran precisión. Puedes combinar diferentes valores de intensidad para obtener el color deseado. Además, puedes utilizar la notación RGBA para especificar un cuarto valor (alfa) que controla la transparencia del color. Por ejemplo, rgba(255, 0, 0, 0.5) establecería el color rojo con una transparencia del 50%.
+La notación RGB te permite especificar colores personalizados con gran precisión. Puedes combinar diferentes valores de intensidad para obtener el color deseado.
+ Además, puedes utilizar la notación RGBA para especificar un cuarto valor (alfa) que controla la transparencia del color. 
+ 
+ Por ejemplo, rgba(255, 0, 0, 0.5) establecería el color rojo con una transparencia del 50%.
 
 
 
